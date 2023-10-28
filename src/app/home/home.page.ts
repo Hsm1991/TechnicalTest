@@ -31,7 +31,7 @@ export class HomePage implements OnInit{
   ) {}
 
   ngOnInit(): void {
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 4000; i++) {
       const id = i % 1084;
       this.imageService.getImageInfo(id).subscribe((data: any) => {
         const image = {
